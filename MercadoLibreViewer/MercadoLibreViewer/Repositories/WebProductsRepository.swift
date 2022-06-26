@@ -3,9 +3,7 @@ import Foundation
 
 fileprivate let baseURL = URL(string: "https://api.mercadolibre.com/")
 
-class WebAPIProductsRepository: ProductRepository, ObservableObject {
-    @Published var products: [Product] = []
-
+class WebProductsRepository: ProductRepository {
     private let decoder = JSONDecoder()
     private let siteID = getSiteIDForCurrentLocale()
 
@@ -13,11 +11,11 @@ class WebAPIProductsRepository: ProductRepository, ObservableObject {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
     }
 
-    func getSearchResults(forQuery query: String) async throws {
+    func getSearchResults(forQuery query: String) async throws -> [Product] {
         let url = URL(string: "sites/\(siteID)/search", relativeTo: baseURL)!
         let request = buildRequest(for: url, with: [URLQueryItem(name: "q", value: query)])
         let (data, _) = try await URLSession.shared.data(for: request)
-        products = (try decoder.decode(Response.self, from: data)).results
+        return (try decoder.decode(Response.self, from: data)).results
     }
 
     private func buildRequest(for url: URL, with queryItems: [URLQueryItem]) -> URLRequest {

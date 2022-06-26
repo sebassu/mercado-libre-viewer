@@ -1,13 +1,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var repository = WebAPIProductsRepository()
-    @State var showSearchOverlay = false
+    @State private var products: [Product] = []
+    private var repository = WebProductsRepository()
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 12) {
-                ForEach(repository.products, id: \.self) { product in
+                ForEach(self.products, id: \.self) { product in
                     Text(product.title).lineLimit(1)
                 }
                 HStack {
@@ -20,7 +20,7 @@ struct ContentView: View {
     private var searchButton: some View {
         Button {
             Task {
-                try await repository.getSearchResults(forQuery: "alfombras")
+                self.products = try await repository.getSearchResults(forQuery: "alfombras")
             }
         } label: {
             Text("Search")
