@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDEF47EB2867A8C50015F438 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF47EA2867A8C50015F438 /* Response.swift */; };
+		FDEF47EC2867A8C50015F438 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF47EA2867A8C50015F438 /* Response.swift */; };
+		FDEF47ED2867A8C50015F438 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF47EA2867A8C50015F438 /* Response.swift */; };
+		FDEF47EF286819290015F438 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF47EE286819290015F438 /* Product.swift */; };
+		FDEF47F0286819290015F438 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF47EE286819290015F438 /* Product.swift */; };
+		FDEF47F1286819290015F438 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF47EE286819290015F438 /* Product.swift */; };
 		FDF131572866AAB000BC7B8D /* MercadoLibreViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF131562866AAB000BC7B8D /* MercadoLibreViewerApp.swift */; };
 		FDF131592866AAB000BC7B8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF131582866AAB000BC7B8D /* ContentView.swift */; };
 		FDF1315B2866AAB100BC7B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF1315A2866AAB100BC7B8D /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 		FDF131682866AAB200BC7B8D /* MercadoLibreViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF131672866AAB200BC7B8D /* MercadoLibreViewerTests.swift */; };
 		FDF131722866AAB200BC7B8D /* MercadoLibreViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF131712866AAB200BC7B8D /* MercadoLibreViewerUITests.swift */; };
 		FDF131742866AAB200BC7B8D /* MercadoLibreViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF131732866AAB200BC7B8D /* MercadoLibreViewerUITestsLaunchTests.swift */; };
+		FDF131832866B07500BC7B8D /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF131822866B07500BC7B8D /* ProductRepository.swift */; };
+		FDF131842866B07500BC7B8D /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF131822866B07500BC7B8D /* ProductRepository.swift */; };
+		FDF131852866B07500BC7B8D /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF131822866B07500BC7B8D /* ProductRepository.swift */; };
+		FDF131872866B26B00BC7B8D /* WebAPIProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF131862866B26B00BC7B8D /* WebAPIProductsRepository.swift */; };
+		FDF131882866B26B00BC7B8D /* WebAPIProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF131862866B26B00BC7B8D /* WebAPIProductsRepository.swift */; };
+		FDF131892866B26B00BC7B8D /* WebAPIProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF131862866B26B00BC7B8D /* WebAPIProductsRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FDEF47EA2867A8C50015F438 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		FDEF47EE286819290015F438 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		FDF131532866AAB000BC7B8D /* MercadoLibreViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibreViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF131562866AAB000BC7B8D /* MercadoLibreViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLibreViewerApp.swift; sourceTree = "<group>"; };
 		FDF131582866AAB000BC7B8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +58,8 @@
 		FDF1316D2866AAB200BC7B8D /* MercadoLibreViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MercadoLibreViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF131712866AAB200BC7B8D /* MercadoLibreViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLibreViewerUITests.swift; sourceTree = "<group>"; };
 		FDF131732866AAB200BC7B8D /* MercadoLibreViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLibreViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDF131822866B07500BC7B8D /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		FDF131862866B26B00BC7B8D /* WebAPIProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIProductsRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +110,7 @@
 		FDF131552866AAB000BC7B8D /* MercadoLibreViewer */ = {
 			isa = PBXGroup;
 			children = (
+				FDF131802866AEBF00BC7B8D /* Models */,
 				FDF131562866AAB000BC7B8D /* MercadoLibreViewerApp.swift */,
 				FDF131582866AAB000BC7B8D /* ContentView.swift */,
 				FDF1315A2866AAB100BC7B8D /* Assets.xcassets */,
@@ -125,6 +142,17 @@
 				FDF131732866AAB200BC7B8D /* MercadoLibreViewerUITestsLaunchTests.swift */,
 			);
 			path = MercadoLibreViewerUITests;
+			sourceTree = "<group>";
+		};
+		FDF131802866AEBF00BC7B8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDF131822866B07500BC7B8D /* ProductRepository.swift */,
+				FDF131862866B26B00BC7B8D /* WebAPIProductsRepository.swift */,
+				FDEF47EA2867A8C50015F438 /* Response.swift */,
+				FDEF47EE286819290015F438 /* Product.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF131592866AAB000BC7B8D /* ContentView.swift in Sources */,
+				FDF131872866B26B00BC7B8D /* WebAPIProductsRepository.swift in Sources */,
 				FDF131572866AAB000BC7B8D /* MercadoLibreViewerApp.swift in Sources */,
+				FDF131832866B07500BC7B8D /* ProductRepository.swift in Sources */,
+				FDEF47EB2867A8C50015F438 /* Response.swift in Sources */,
+				FDEF47EF286819290015F438 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEF47EC2867A8C50015F438 /* Response.swift in Sources */,
 				FDF131682866AAB200BC7B8D /* MercadoLibreViewerTests.swift in Sources */,
+				FDEF47F0286819290015F438 /* Product.swift in Sources */,
+				FDF131882866B26B00BC7B8D /* WebAPIProductsRepository.swift in Sources */,
+				FDF131842866B07500BC7B8D /* ProductRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF131722866AAB200BC7B8D /* MercadoLibreViewerUITests.swift in Sources */,
+				FDF131892866B26B00BC7B8D /* WebAPIProductsRepository.swift in Sources */,
 				FDF131742866AAB200BC7B8D /* MercadoLibreViewerUITestsLaunchTests.swift in Sources */,
+				FDF131852866B07500BC7B8D /* ProductRepository.swift in Sources */,
+				FDEF47ED2867A8C50015F438 /* Response.swift in Sources */,
+				FDEF47F1286819290015F438 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
