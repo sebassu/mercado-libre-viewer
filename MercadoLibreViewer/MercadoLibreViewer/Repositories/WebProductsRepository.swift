@@ -3,7 +3,7 @@ import Foundation
 
 class WebProductsRepository: ProductRepository {
     private let decoder = JSONDecoder()
-    private let searchURL = URL(string: "api.mercadolibre.com/sites/\(Locale.currentSiteId)/search")!
+    private let searchURL = URL(string: "https://api.mercadolibre.com/sites/\(Locale.currentSiteId)/search")!
 
     init() {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
