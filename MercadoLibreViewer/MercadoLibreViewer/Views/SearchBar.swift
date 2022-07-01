@@ -3,6 +3,7 @@ import SwiftUI
 struct SearchBar: View {
     @Binding private var searchText: String
     @FocusState private var isFocused: Bool
+    @State private var isCancelButtonShown = false
     private var previousSearchText = ""
 
     init(searchText: Binding<String>, onSearch: (String) -> Void) {
@@ -11,11 +12,14 @@ struct SearchBar: View {
 
     var body: some View {
         HStack {
-            searchInput.animation(.linear(duration: 0.1), value: isFocused)
-            if isFocused { cancelButton }
+            searchInput.transition(.scale)
+            if isCancelButtonShown { cancelButton }
+        }.padding(EdgeInsets(top: 20, leading: 22, bottom: 16, trailing: 22))
+            .onChange(of: isFocused) { newValue in
+            withAnimation {
+                isCancelButtonShown = newValue
+            }
         }
-        .padding(EdgeInsets(top: 20, leading: 22,
-            bottom: 16, trailing: 22))
     }
 
     var searchInput: some View {
@@ -44,5 +48,6 @@ struct SearchBar: View {
             searchText = previousSearchText
             isFocused = false
         }.buttonStyle(.bordered).buttonBorderShape(.capsule)
+            .transition(.scale(scale: 0, anchor: .trailing))
     }
 }
