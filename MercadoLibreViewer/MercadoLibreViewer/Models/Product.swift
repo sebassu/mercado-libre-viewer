@@ -3,4 +3,5 @@ struct Product: Codable, Hashable {
     let title: String
     let price: Float
     let currencyId: String
+    let thumbnail: String
 }

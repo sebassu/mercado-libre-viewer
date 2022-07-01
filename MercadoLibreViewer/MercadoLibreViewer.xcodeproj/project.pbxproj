@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD15F8DE2874E76E0046CF1B /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15F8DD2874E76E0046CF1B /* ProductItem.swift */; };
+		FD15F8DF2874E76E0046CF1B /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD15F8DD2874E76E0046CF1B /* ProductItem.swift */; };
 		FD3CE359286CFFBB008543D0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3CE358286CFFBB008543D0 /* SearchBar.swift */; };
 		FD3CE35A286CFFDE008543D0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3CE358286CFFBB008543D0 /* SearchBar.swift */; };
 		FD3CE361286D09BE008543D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD3CE364286D09BE008543D0 /* Localizable.strings */; };
@@ -65,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD15F8DD2874E76E0046CF1B /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
 		FD3CE358286CFFBB008543D0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		FD3CE363286D09BE008543D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FD3CE365286D09DB008543D0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 			children = (
 				FDF131582866AAB000BC7B8D /* ContentView.swift */,
 				FD3CE358286CFFBB008543D0 /* SearchBar.swift */,
+				FD15F8DD2874E76E0046CF1B /* ProductItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,6 +341,7 @@
 			files = (
 				FD3CE359286CFFBB008543D0 /* SearchBar.swift in Sources */,
 				FDF131592866AAB000BC7B8D /* ContentView.swift in Sources */,
+				FD15F8DE2874E76E0046CF1B /* ProductItem.swift in Sources */,
 				FDF131872866B26B00BC7B8D /* WebProductsRepository.swift in Sources */,
 				FDF131572866AAB000BC7B8D /* MercadoLibreViewerApp.swift in Sources */,
 				FD87B61B286BA51200914B74 /* SearchSuggestionsResponse.swift in Sources */,
@@ -379,6 +384,7 @@
 				FDF131852866B07500BC7B8D /* ProductRepository.swift in Sources */,
 				FD3CE35A286CFFDE008543D0 /* SearchBar.swift in Sources */,
 				FD87B619286BA18C00914B74 /* Locale+SiteId.swift in Sources */,
+				FD15F8DF2874E76E0046CF1B /* ProductItem.swift in Sources */,
 				FD87B610286BA00000914B74 /* WebSearchSuggestionsHelper.swift in Sources */,
 				FD87B60C286A897400914B74 /* SearchSuggestionsHelper.swift in Sources */,
 				FD87B624286BBF2600914B74 /* ContentView.swift in Sources */,
