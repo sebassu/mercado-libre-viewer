@@ -13,6 +13,6 @@ class WebSearchSuggestionsHelper: SearchSuggestionsHelper {
         let request = URLRequest.buildQuery(for: self.suggestionsURL, withValue: prompt)
         let (data, _) = try await URLSession.shared.data(for: request)
         return (try decoder.decode(SearchSuggestionsResponse.self,
-            from: data)).suggestedQueries.map({ $0.q })
+            from: data)).suggestedQueries.map({ $0.text })
     }
 }
