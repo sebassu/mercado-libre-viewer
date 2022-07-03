@@ -25,8 +25,7 @@ struct SearchBar: View {
     var searchInput: some View {
         HStack {
             Image(systemName: "magnifyingglass")
-            TextField("search", text: $searchText)
-                .focused($isFocused)
+            TextField("search", text: $searchText).focused($isFocused)
             if !searchText.isEmpty { resetTextButton }
         }.padding(8)
             .background(RoundedRectangle(cornerRadius: 20).fill(Color.white))
@@ -36,6 +35,7 @@ struct SearchBar: View {
     var resetTextButton: some View {
         Button {
             searchText = ""
+            isFocused = true
         } label: {
             Image(systemName: "multiply.circle")
                 .foregroundColor(.black)
@@ -48,6 +48,6 @@ struct SearchBar: View {
             searchText = previousSearchText
             isFocused = false
         }.buttonStyle(.bordered).buttonBorderShape(.capsule)
-            .transition(.scale(scale: 0, anchor: .trailing))
+            .transition(.scale(scale: 0.0001, anchor: .trailing))
     }
 }

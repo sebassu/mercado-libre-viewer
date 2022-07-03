@@ -8,12 +8,14 @@ struct SuggestedQuery: Decodable, Hashable, Identifiable {
     let matchStart: Int
     let matchEnd: Int
 
-    func getFormattedText() -> String {
+    var formattedText: String { get {
         var result = String(text)
-        result.insert(contentsOf: "**", at: text.index(result.startIndex, offsetBy: matchStart))
-        result.insert(contentsOf: "**", at: text.index(result.startIndex, offsetBy: matchEnd + 2))
+        result.insert(contentsOf: "**",
+            at: text.index(result.startIndex, offsetBy: matchStart))
+        result.insert(contentsOf: "**",
+            at: text.index(result.startIndex, offsetBy: matchEnd + 2))
         return result
-    }
+    } }
 
     private enum CodingKeys: String, CodingKey {
         case text = "q"
