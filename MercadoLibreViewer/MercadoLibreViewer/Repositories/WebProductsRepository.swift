@@ -10,7 +10,7 @@ class WebProductsRepository: ProductRepository {
     }
 
     func getSearchResults(forQuery query: String) async throws -> [Product] {
-        let request = URLRequest.buildQuery(for: self.searchURL, withValue: query)
+        let request = URLRequest.buildProductsQuery(for: self.searchURL, withValue: query)
         let (data, _) = try await URLSession.shared.data(for: request)
         return (try decoder.decode(ProductSearchResponse.self, from: data)).results
     }
