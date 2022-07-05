@@ -1,4 +1,4 @@
-struct Product: Codable, Hashable {
+struct Product: Decodable, Hashable, Identifiable {
     let id: String
     let title: String
     let price: Float

@@ -1,6 +1,7 @@
 import Combine
 import Foundation
 
-protocol SearchSuggestionsHelper {
+protocol SearchSuggestionsHandler {
+    func getMostSearchedItems() async throws -> [Trend]
     func getSearchSuggestions(forPrompt: String) async throws -> [SuggestedQuery]
 }

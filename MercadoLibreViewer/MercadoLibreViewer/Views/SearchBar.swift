@@ -2,12 +2,15 @@ import SwiftUI
 
 struct SearchBar: View {
     @Binding private var searchText: String
+    private var onSearch: (String) async -> Void
+
     @FocusState private var isFocused: Bool
     @State private var isCancelButtonShown = false
     private var previousSearchText = ""
 
-    init(searchText: Binding<String>, onSearch: (String) -> Void) {
-        _searchText = searchText
+    init(searchText: Binding<String>, onSearch: @escaping (String) async -> Void) {
+        self._searchText = searchText
+        self.onSearch = onSearch
     }
 
     var body: some View {
