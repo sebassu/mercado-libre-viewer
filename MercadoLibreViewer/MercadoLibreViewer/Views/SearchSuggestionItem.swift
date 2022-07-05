@@ -14,6 +14,6 @@ struct SearchSuggestionItem: View {
             } label: {
                 Image(systemName: "arrow.up.left")
             }.buttonStyle(.plain)
-        }.padding(.vertical, 8)
+        }.padding(.vertical, 9)
     }
 }
