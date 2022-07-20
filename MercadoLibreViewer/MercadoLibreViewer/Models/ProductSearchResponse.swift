@@ -1,9 +1,9 @@
-struct ProductSearchResponse: Codable {
+struct ProductSearchResponse: Decodable {
     let paging: PagingData
     let results: [Product]
 }
 
-struct PagingData: Codable {
+struct PagingData: Decodable {
     let total: Int
     let primaryResults: Int
     let offset: Int

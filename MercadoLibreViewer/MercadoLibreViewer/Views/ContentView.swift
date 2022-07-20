@@ -22,15 +22,15 @@ struct ContentView: View {
                 }
                 .background(Color.white)
                 .ignoresSafeArea(edges: .bottom)
-                .overlay(overlay)
+                .overlay(searchOverlay)
             }
         }
     }
 
     @ViewBuilder
-    private var overlay: some View {
+    private var searchOverlay: some View {
         if isSearchBarFocused {
-            Color.red.ignoresSafeArea()
+            SearchSuggestionsOverlay(searchText: $searchText)
         }
     }
 }

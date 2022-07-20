@@ -2,5 +2,5 @@ import Combine
 import Foundation
 
 protocol SearchSuggestionsHelper {
-    func getSearchSuggestions(forPrompt: String) async throws -> [String]
+    func getSearchSuggestions(forPrompt: String) async throws -> [SuggestedQuery]
 }
